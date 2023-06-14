@@ -22,13 +22,47 @@
 
   <main>
     <div class="storage-component-container">
-      <div class="tools-container">1</div>
-      <div class="status-container">
-        You’ve used 815 GB of your storage
-        185 GB Left
-        0 GB
-        1000 GB
+      <div class="tools-container">
+        <div class="logo">
+          <img src="images/logo.svg" alt="">
+        </div>
+        <div class="tool-icons">
+          <img src="images/icon-document.svg" alt="">
+          <img src="images/icon-folder.svg" alt="">
+          <img src="images/icon-upload.svg" alt="">
+        </div>
       </div>
+
+      <div class="status-container">
+        <div class="floating-storage-digits">
+          <div>
+            <span>185</span>
+            <span>GB Left</span>
+          </div>
+        </div>
+        <div class="status-container-info">
+          <p>
+            You’ve used
+            <span id="space-left">815 GB</span> of your storage
+          </p>
+          <div class="storage-status-container">
+            <div class="storage-status">
+              <div class="storage-status-thumb"></div>
+            </div>
+          </div>
+          <div class="min-max-values">
+            <div class="min-value">0 GB</div>
+            <div class="min-value">1000 GB</div>
+          </div>
+        </div>
+        <div class="floating-storage-digits-mobile">
+          <div>
+            <span>185</span>
+            <span>GB Left</span>
+          </div>
+        </div>
+      </div>
+
     </div>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
