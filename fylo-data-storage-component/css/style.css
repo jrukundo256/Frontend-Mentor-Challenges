@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(229, 57%, 11%);
+    background-image: url('../images/bg-desktop.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100% 50%;
+
+    border: 2px solid black;
+}
+
+.storage-component-container {
+    display: flex;
+    gap: 1.5em;
+    margin: 0 auto;
+    width: 50vw;
+    background-color: hsl(243, 100%, 93%);
+    /* background-color: hsl(228, 56%, 26%); */
+
+    border: 1px solid black;
+}
+
+.tools-container {
+    flex: 0.3;
+
+    border: 1px solid green;
+}
+
+.status-container {
+    flex: 0.7;
+
+    border: 1px solid red;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/* Allowing for responsiveness by CSS Media Queries */
+@media (max-width: 375px) {
+
+    main {
+        background-color: hsl(229, 57%, 11%);
+        background-image: url('../images/bg-mobile.png');
+        background-repeat: no-repeat;
+        /* background-position: center bottom; */
+        /* background-size: 100% 50%; */
+        background-size: cover;
+    
+        border: 2px solid black;
+    }
+
+    .storage-component-container {
+        flex-direction: column;
+        width: 90vw;
+    }
+
+}
